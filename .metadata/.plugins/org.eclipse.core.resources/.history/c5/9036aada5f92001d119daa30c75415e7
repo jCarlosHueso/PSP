@@ -1,0 +1,19 @@
+package ejercicio2;
+
+public class Ejercicio2 {
+private int contador;
+	public static void main(String[] args) {
+
+//		Realice un ejercicio que crea 3 hilos y
+//		que cada uno de ellos vaya mostrando el contenido de un contador.
+
+		
+for (int i = 0; i < 3; i++) {
+	
+}
+		
+
+		
+	}
+
+}

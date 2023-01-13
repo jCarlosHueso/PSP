@@ -1,0 +1,28 @@
+package ejemplo2.Sincronizacion;
+
+public class Cuenta  extends Thread{
+private int saldo;
+
+
+public Cuenta(int saldo) {
+	this.saldo = saldo;
+}
+
+
+public int getSaldo() {
+	return saldo;
+	
+}
+
+public void restar(int cantidad) {
+	saldo = saldo-cantidad;
+}
+
+public void restirarDinero(int cant,String nombre) {
+	if(getSaldo()>=cant) {
+		System.out.println("se va a retirar salgo el actual es " + getSaldo());
+		sleep(100);
+	}
+}
+
+}
