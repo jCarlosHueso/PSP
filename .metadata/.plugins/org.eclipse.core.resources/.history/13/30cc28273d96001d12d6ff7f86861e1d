@@ -1,0 +1,16 @@
+package ejercicio3;
+
+public class principal implements Runnable {
+
+	public static void main(String[] args) {
+	
+	
+	}
+	
+	public void producirLetra() {
+		
+	}
+	public void leerLetra() {
+		
+	}
+}

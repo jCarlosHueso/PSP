@@ -1,0 +1,25 @@
+package ejercicio3;
+
+public class principal implements Runnable {
+
+	public static void main(String[] args) {
+	
+	
+	}
+	
+	public char producirLetra() {
+		char resultado;
+		
+		resultado = (char)((int) Math.round(Math.random()*26));
+		
+		return resultado;
+	}
+	
+	public void leerLetra() {
+		
+	}
+
+	public void run() {
+		producirLetra();
+	}
+}

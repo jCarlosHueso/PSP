@@ -1,0 +1,23 @@
+package ejercicio3;
+
+import java.util.List;
+
+public class SinPila {
+
+	private List<Character>buffer;
+	
+	
+	public char pop() {
+		
+		char c;
+		
+		c = buffer.remove(buffer.size()-1);
+		return c;
+		
+	}
+	
+	public void push(char c) {
+		buffer.add(c);
+	}
+	
+}

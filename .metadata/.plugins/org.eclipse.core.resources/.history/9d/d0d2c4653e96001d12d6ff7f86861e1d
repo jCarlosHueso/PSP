@@ -1,0 +1,38 @@
+package ejercicio3;
+
+public class principal implements Runnable {
+	char letra;
+
+	public principal() {
+
+	}
+
+	public principal(char letra) {
+		this.letra = letra;
+	}
+
+	public static void main(String[] args) {
+
+		principal pr = new principal();
+
+		for (int i = 0; i < 5; i++) {
+			new Thread(pr).start();
+		}
+
+	}
+
+	public void producirLetra() {
+		
+String letras = "ABCDEFGHIJKLMNÑOPQRSTUVWXYZ";
+letra = letras.charAt((int)Math.round(Math.random()*letras.length()));
+	}
+
+	public void leerLetra() {
+System.out.println(letra);
+	}
+
+	public void run() {
+		producirLetra();
+		leerLetra();
+	}
+}
