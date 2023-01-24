@@ -25,9 +25,11 @@ public class SinPila {
 	}
 
 	public synchronized void push(char c) {
-		buffer.add(c);
 		this.notify();
 
+		buffer.add(c);
+			
 	}
 
+	
 }
