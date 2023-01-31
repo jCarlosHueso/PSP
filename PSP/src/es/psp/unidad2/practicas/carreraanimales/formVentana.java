@@ -41,7 +41,6 @@ public class formVentana  extends JFrame implements Runnable{
      btnEmpezar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-            	//este m�todo es el que se ejecuta cuando se le da al bot�n "Empezar"
                 
             	for (int i = 0; i < 3; i++) {
                     labelAnimal[i].setLocation(0, 0);
@@ -71,5 +70,6 @@ public class formVentana  extends JFrame implements Runnable{
 			labelAnimal[0].setLocation(puntoAnterior,0);
 			System.out.println(labelAnimal[0].getLocation());
 		}
-	} 
+	}
+	
 }

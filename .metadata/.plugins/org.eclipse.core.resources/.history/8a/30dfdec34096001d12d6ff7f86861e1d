@@ -1,9 +1,0 @@
-package ejercicio3;
-
-public class Productor {
-private SinPila pila;
-private int id;
-private static int contador = 0;
-
-
-}
