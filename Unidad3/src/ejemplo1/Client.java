@@ -24,17 +24,17 @@ public class Client
             // Obtenemos los input y out streams
             DataInputStream dis = new DataInputStream(s.getInputStream());
             DataOutputStream dos = new DataOutputStream(s.getOutputStream());
-            // El siguiente bucle ejecuta el intercambio de       
+      
+            // El siguiente bucle ejecuta el intercambio de 
             // informaci�n entre el cliente y el manejador de cliente
-            while (true)   
-          {
+            while (true) 
+            {
                 System.out.println(dis.readUTF());
                 String cadena = scn.nextLine();
                 dos.writeUTF(cadena);
                   
-                // Si el cliente env�a exit, la conexión se cierra 
+                // Si el cliente env�a exit, la conexi�n se cierra 
                 // y despu�s salimos del bucle con break
-                
                 if(cadena.equals("Exit"))
                 {
                     System.out.println("Cerramos la conexi�n : " + s);

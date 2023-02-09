@@ -5,4 +5,8 @@
 		<item key="DIALOG_HEIGHT" value="380"/>
 		<item key="DIALOG_FONT_NAME" value="1|Ubuntu|10.0|0|GTK|1|"/>
 	</section>
+	<section name="ExportLaunchConfigurations">
+		<item key="overwrite" value="false"/>
+		<item key="oldpath" value="/home/mint/Escritorio"/>
+	</section>
 </section>

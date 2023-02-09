@@ -4,8 +4,6 @@ package es.psp.unidad2.practicas.carreraanimales;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.Random;
-
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -13,7 +11,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 
-public class formVentana  extends JFrame implements Runnable{
+public class formVentana  extends JFrame {
       
         JPanel[] panelAnimal;
         JLabel[] labelAnimal;
@@ -42,16 +40,13 @@ public class formVentana  extends JFrame implements Runnable{
             @Override
             public void actionPerformed(ActionEvent e) {
                 
-            	for (int i = 0; i < 3; i++) {
-                    labelAnimal[i].setLocation(0, 0);
-				}
-            	formVentana caracol1=new formVentana();
-                new Thread(caracol1).start();
-
-            	
+            	//este método es el que se ejecuta cuando se le da al botón "Empezar"
+                
             }
         });
       add(btnEmpezar);
+      
+      
       setDefaultCloseOperation(EXIT_ON_CLOSE);
       setLocation(20,20);
       setSize(anchoVentana,600);
@@ -61,15 +56,6 @@ public class formVentana  extends JFrame implements Runnable{
 
       
     }
-
-	@Override
-	public void run() {
-		int puntoAnterior=0;
-		while(labelAnimal[0].getX()<=900) {
-			puntoAnterior+=(int)Math.random()*10;
-			labelAnimal[0].setLocation(puntoAnterior,0);
-			System.out.println(labelAnimal[0].getLocation());
-		}
-	}
-	
+   
+    
 }

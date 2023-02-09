@@ -32,19 +32,15 @@ public class ClienteCalculo {
             
             Scanner s = new Scanner(System.in);
             String n1= s.nextLine();
-            System.out.println("Introduzca la operacion a realizar");
-            String x= s.nextLine();
             System.out.println("Introduzca otro n�mero");
             String n2= s.nextLine();
             
-            
-            
-          // Siempre estamos sumando. Cambiar para que pueda hacer cualquier operaci�n aritm�tica.
+            pw.print("+\n"); // Siempre estamos sumando. Cambiar para que pueda hacer cualquier operaci�n aritm�tica.
             //pw.print(n1+"\n");
             //pw.print(n2+"\n");
-            pw.println(x);
             pw.println(n1);
             pw.println(n2);
+       
             
             pw.flush();
             String resultado=bfr.readLine();
