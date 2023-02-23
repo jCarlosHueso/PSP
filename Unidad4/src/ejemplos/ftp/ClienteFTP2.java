@@ -6,6 +6,9 @@ import org.apache.commons.net.ftp.FTPClient;
 import org.apache.commons.net.ftp.FTPFile;
 import org.apache.commons.net.ftp.FTPReply;
 
+// 						xphomdudvhrqzjog
+
+
 public class ClienteFTP2 {
 
 	public static void main(String[] args) throws IOException {

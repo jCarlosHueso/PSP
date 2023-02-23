@@ -1,7 +1,6 @@
 package ejemplos.ftp;
 
 import java.io.IOException;
-
 import org.apache.commons.net.ftp.FTPClient;
 import org.apache.commons.net.ftp.FTPReply;
 
