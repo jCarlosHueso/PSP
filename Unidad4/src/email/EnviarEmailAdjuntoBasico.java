@@ -21,9 +21,9 @@ import javax.mail.util.ByteArrayDataSource;
 public class EnviarEmailAdjuntoBasico {
    public static void main(String[] args) throws Exception {
       // Propiedades del email
-      String host = "smtp.gmail.com";
-      String username = "josecarlosclaseprueba@gmail.com";
-      String password = "xphomdudvhrqzjog";
+//      String host = "smtp.gmail.com";
+//      String username = "josecarlosclaseprueba@gmail.com";
+//      String password = "xphomdudvhrqzjog";
 
       // Crear la sesi�n
       Properties props = new Properties();
