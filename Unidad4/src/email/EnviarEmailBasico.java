@@ -17,9 +17,9 @@ import javax.mail.internet.MimeMessage;
 public class EnviarEmailBasico {
    public static void main(String[] args) throws Exception {
       // Establecer las propiedades del email
-//      String host = "smtp.gmail.com";
-//      String username = "josecarlosclaseprueba@gmail.com";
-//      String password = "xphomdudvhrqzjog";
+      String host = "smtp.gmail.com";
+      String username = "josecarlosclaseprueba@gmail.com";
+      String password = "xphomdudvhrqzjog";
 
       // Crear una sesi�n
       Properties props = new Properties();
